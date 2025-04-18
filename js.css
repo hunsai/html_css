@@ -1,0 +1,114 @@
+:root {
+  --color-xanh: #2d74ba;
+  --color-nhat: #ecf3f9;
+  --text-color: #333;
+  --color-trang: #fff;
+  --font-family: "Poppins", sans-serif;
+}
+#backtop {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--color-xanh);
+  font-size: 26px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+#backtop a {
+  text-decoration: none;
+}
+.backtop i {
+  color: #fff;
+}
+/* blog */
+.filter-buttons .active {
+  background-color: var(--color-xanh);
+  border-color: var(--color-trang);
+  color: var(--color-trang) !important;
+}
+/* blog */
+
+/* booking2 */
+#mainImg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Đảm bảo căn giữa nếu không dùng flexbox */
+  object-fit: cover;
+}
+
+/* kt loi */
+.input-error {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.book-email {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.car-details {
+  position: relative;
+  text-align: center;
+}
+
+#mainImg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Style cho nút bấm */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Nút prev bên trái */
+#prevBtn {
+  left: 10px;
+}
+
+/* Nút next bên phải */
+#nextBtn {
+  right: 10px;
+}
+
+/* Thumbnail */
+.thumbnail {
+  width: 80px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.2s ease-in-out, border-color 0.3s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+  border-color: var(--color-xanh);
+}
